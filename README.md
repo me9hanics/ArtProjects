@@ -1,10 +1,10 @@
-# ArtProject
-**Large scale painter network analysis:<br>Creating and analyzing networks of painters, styles, and art movements, based on the PainterPalette dataset**
+# ArtProjects
+**Collection of large scale painter network analyses:<br>Painter, style and movement networks structure analyses; coexhibition networks; static and dynamic analyses of a co-location painter network**
 
 <div align="center">
   <img src="analysis/images/poster.jpg" width=90% alt="Poster of the project">
-  <img src="https://github.com/me9hanics/ArtProject/assets/82604073/7690b7fc-b46e-4e27-ae98-7aa8bc046dc5" width=45% alt="Painter Network">
-  <img src="https://raw.githubusercontent.com/me9hanics/ArtProject/main/analysis/images/3000_painters_connected_by_locations_communities_2.png" width=45% alt="Painter connections by locations - 3000 painters">
+  <img src="https://github.com/me9hanics/ArtProjects/assets/82604073/7690b7fc-b46e-4e27-ae98-7aa8bc046dc5" width=45% alt="Painter Network">
+  <img src="https://raw.githubusercontent.com/me9hanics/ArtProjects/main/analysis/images/3000_painters_connected_by_locations_communities_2.png" width=45% alt="Painter connections by locations - 3000 painters">
 </div>
 
 ## ![NetSci red text](https://placehold.co/200x50/transparent/F00?text=NetSci+2025)
@@ -17,7 +17,7 @@ If you've come here from the NetSci 2025 conference slides, thank you for attend
 - [Using Wikidata to gather extensive information](https://github.com/me9hanics/wikidata-SparQL-data-collection) about historical people
 - [NetSci 2025 presentation](https://me9hanics.github.io/projects/NetSci2025_PainterNetwork.pptx)
 - [Coexhibition network of artists](https://github.com/me9hanics/e-flux_scraping_coexhibition_networks?tab=readme-ov-file#coexhibition-network) from web scraped e-flux.com data and PainterPalette - explainging the solution in great depth
-- Collection of art analyses I was involved in [ArtProject](https://github.com/me9hanics/ArtProject)
+- Collection of art analyses I was involved in [ArtProjects](https://github.com/me9hanics/ArtProjects)
 - A [SQL script](https://github.com/me9hanics/paintings-SQL-data-warehouse?tab=readme-ov-file#painters-paintings-institutions-and-styles-an-sql-database-with-an-etl-pipeline-and-analytics) creating a database of painters, paintings, styles, movements and institutions (outdated)
 - Graph database: [Neo4j painter coexhibition network storing](https://github.com/me9hanics/Neo4j-KNIME-coexhibition-network-pipeline?tab=readme-ov-file#painter-coexhibition-network-creation-and-analytics-using-neo4j-and-knime) and analysis, based on a pipeline designed in KNIME
 - [Website](https://me9hanics.github.io/projects/painterpalette.html) under construction 
@@ -63,8 +63,8 @@ $$ TLSI = \frac{{\text{{common years (in their lifetime)}}}}{{\text{{amount of p
 Multiple painters networks were created:
 
 - connections based on living at the same places at the same time (& nationality): see the latest work <br>
-Another, less extensive example in this repository: [painters_network_connected_by_locations.ipynb](https://github.com/me9hanics/ArtProject/blob/main/analysis/painters_network_connected_by_locations.ipynb)<br>
-Older "premature" analyses, that focuses on dynamic network development: [triangle_closure_cultural_dynamics.ipynb](https://github.com/me9hanics/ArtProject/blob/main/old%20analysis%20(2023)/networks/triangle_closure_cultural_dynamics.ipynb) and [tt-embedded_analysis.ipynb](https://github.com/me9hanics/ArtProject/blob/main/old%20analysis%20(2023)/networks/tt-embedded_analysis.ipynb) notebooks<br>
+Another, less extensive example in this repository: [painters_network_connected_by_locations.ipynb](https://github.com/me9hanics/ArtProjects/blob/main/analysis/painters_network_connected_by_locations.ipynb)<br>
+Older "premature" analyses, that focuses on dynamic network development: [triangle_closure_cultural_dynamics.ipynb](https://github.com/me9hanics/ArtProjects/blob/main/old%20analysis%20(2023)/networks/triangle_closure_cultural_dynamics.ipynb) and [tt-embedded_analysis.ipynb](https://github.com/me9hanics/ArtProjects/blob/main/old%20analysis%20(2023)/networks/tt-embedded_analysis.ipynb) notebooks<br>
 - networks using artistic style similarity (and time)
 - coexhibition network, using scraped data from the e-flux website, see the separate repo with great technical description: [e-flux_scraping](https://github.com/me9hanics/e-flux_scraping_coexhibition_networks)
 - who influenced whom networks (considerably smaller size).
@@ -76,14 +76,14 @@ We also created a network of styles and movements.
 - painter network based on living at the same place at the same time (approximately): [https://github.com/me9hanics/painter-network-exploration](https://github.com/me9hanics/painter-network-exploration?tab=readme-ov-file#painter-network-exploration) - the `painter_networks.ipynb` notebook contains the network creation, filtering and analysis: macroscale statistics e.g. degree distributions, assortativity (rich club behaviour), attribute statistics such as female representation and nationalities, and community detection mesoscale analysis. This is the freshest, most complete and most professional analysis.
 - painter network based on coexhibitions: [e-flux coexhibition networks](https://github.com/me9hanics/e-flux_scraping_coexhibition_networks/tree/main?tab=readme-ov-file#coexhibition-network) - the repo focuses more on the technical implementation of scraping and network creation, however the [community detection](https://github.com/me9hanics/e-flux_scraping_coexhibition_networks/blob/main/5_community_detection.ipynb) and [association rule mining](https://github.com/me9hanics/e-flux_scraping_coexhibition_networks/blob/main/5_association_rules.ipynb) notebooks contain relevant works.
 
-**The results are mostly available at the [Results section](https://github.com/me9hanics/ArtProject/edit/main/README.md#results), WIP.**
+**The results are mostly available at the [Results section](https://github.com/me9hanics/ArtProjects/edit/main/README.md#results), WIP.**
 
 ## Some network visualizations:
 
 * Network of movements (connected based on paintings of one style sharing different painter movements), and "InfluencedOn" painter network:<br>
 <div align="center">
-  <img src="https://github.com/me9hanics/ArtProject/assets/82604073/039688be-16f0-4432-bae2-acba9688914b" height="250" alt="Movements network: movements connected by the amount of artists painting in b" >
-  <img src="https://github.com/me9hanics/ArtProject/assets/82604073/fe2c11b3-0386-4655-857e-37e0632aa6d9" height="250" alt="Painter influence network" >
+  <img src="https://github.com/me9hanics/ArtProjects/assets/82604073/039688be-16f0-4432-bae2-acba9688914b" height="250" alt="Movements network: movements connected by the amount of artists painting in b" >
+  <img src="https://github.com/me9hanics/ArtProjects/assets/82604073/fe2c11b3-0386-4655-857e-37e0632aa6d9" height="250" alt="Painter influence network" >
 </div>
 
 * Communities and hierarchical interconnectedness in a time-and-place connected network:<br>
@@ -92,16 +92,16 @@ We also created a network of styles and movements.
 </div>
 
 <!--
-[comment]: <> (* 3D plot of painters-styles-movements:<br><div align="center"><img src="https://github.com/me9hanics/ArtProject/assets/82604073/585fd608-79c3-4313-8eaf-5c6cc1ebb082" width=50% alt="Painters-styles-movements 3D plot" ></div>)
+[comment]: <> (* 3D plot of painters-styles-movements:<br><div align="center"><img src="https://github.com/me9hanics/ArtProjects/assets/82604073/585fd608-79c3-4313-8eaf-5c6cc1ebb082" width=50% alt="Painters-styles-movements 3D plot" ></div>)
 
-[comment]: <> (* A map of most common styles in the dataset in different countries:<br> <div align="center"><img src="https://github.com/me9hanics/ArtProject/assets/82604073/e56890d3-95f0-4b34-899f-60d9d7500cc8" width=60% alt="Countries with their most common artistic style (in the WikiArt dataset)" ></div>)
+[comment]: <> (* A map of most common styles in the dataset in different countries:<br> <div align="center"><img src="https://github.com/me9hanics/ArtProjects/assets/82604073/e56890d3-95f0-4b34-899f-60d9d7500cc8" width=60% alt="Countries with their most common artistic style (in the WikiArt dataset)" ></div>)
 
 [comment]: <> (* Communities and interconnectedness in a time-and-place connected network:<br><div align="center"><img src="analysis/images/painters_nested_blockmodel_2.png" width=55% alt="Nested block model of 3000 painters" ></div>)
 -->
 
 * Time-and-place connection network of painters:<br>
 <div align="center">
-  <img src="https://github.com/me9hanics/ArtProject/assets/82604073/63fb8fec-20e0-43db-b974-b7f020028df8" width=80% alt="Time-and-place network" >
+  <img src="https://github.com/me9hanics/ArtProjects/assets/82604073/63fb8fec-20e0-43db-b974-b7f020028df8" width=80% alt="Time-and-place network" >
 </div>
 
 This was turned into a dynamic network and time passes along the horizontal axis, painters are aligned according to their birth year. This network was built by creating connections between painters if they painted at the same places roughly at the same time, filtering just for strong connections.
@@ -206,7 +206,7 @@ Dynamically, we created a framework to modify linking methods to include a proba
 All in all, we can say that homogeneous movement connections, and similarly, "friend of friend" connections were much more prominent in the first few centuries, when there were only few types of movements in the dataset (gothic, renaissance (early, high, northern), baroque), the percentages of these ratios were high and even in the 18th century, the decrease was slow. However, from the 1800s, especially in the time interval 1850-1950 (the last 10 decades of the dataset), the ratios decreased very fast, the closed triangles ratio fell to around 12.5% and homogeneous connections now do not even make up 30% of all connections. This is likely caused by two things. One being the increase of international connections, as observed in the data that painters have more locations (visited more places, more distant places). Probably the deeper cause of this is the development in transport and transportation infrastructure. The other cause is the large increase in number of styles, even during one period, at any place. Probably the two events helped "develop" the other, painters being familiar with more styles as they travel, and more styles meant painters exploring more styles, likely causing an increase in growth of connections with painters in multiple styles, even international connections being made. These events helped the increase of inter-movement connections. <br>
 As for comparison to random graphs, we see that there is much more "organization", through all periods there are more triangles (& clusters) and more homogeneous connections than in random graphs. The next step would be to find what really drives this network's structure (how links are being made), and how to model it.
 
-Since the networks seems to be scale-free, we could think it's driven by preferential attachment, but since preferential attachment linking does not create hubs, we may also think that some triangular closure connections are also driving the network. I'd assume this to be true, but from further analysis done, where I created a framework for linking models (Erdős-Rényi, preferential attachment, pref. attachment with 1 triangle closed each time) to only develop connections between nodes in a certain "time interval" in dynamic networks, and just from "dummy" analysis it seems that even if preferential attachment does not create enough triangles, a simple preferential model creates some better results. See [notebook with slides](https://github.com/me9hanics/ArtProject/blob/main/networks/tt-embedded_analysis.ipynb) and [report](https://github.com/me9hanics/ArtProject/blob/main/CSS%20analysis.pdf). 
+Since the networks seems to be scale-free, we could think it's driven by preferential attachment, but since preferential attachment linking does not create hubs, we may also think that some triangular closure connections are also driving the network. I'd assume this to be true, but from further analysis done, where I created a framework for linking models (Erdős-Rényi, preferential attachment, pref. attachment with 1 triangle closed each time) to only develop connections between nodes in a certain "time interval" in dynamic networks, and just from "dummy" analysis it seems that even if preferential attachment does not create enough triangles, a simple preferential model creates some better results. See [notebook with slides](https://github.com/me9hanics/ArtProjects/blob/main/networks/tt-embedded_analysis.ipynb) and [report](https://github.com/me9hanics/ArtProjects/blob/main/CSS%20analysis.pdf). 
 
 ## Old analysis:
 
@@ -219,13 +219,13 @@ From the data, we created networks of painters, styles, and movements. The types
 
 ### Old analysis further details:
 
-**Description:** The work in this repository contains observing the properties and structures of painter, style and movement networks. The project includes gathering, preprocessing the data, possibly the hardest task (and not perfected, further work is to exclude less painters while combining datasets), creating various types of networks from certain attributes of the data (both static and dynamic), and analyzing the networks. Some of the analysis is dynamical analysis, and a dynamic model building framework was also created to construct some models for the dynamic analysis (see [here](https://github.com/me9hanics/ArtProject/blob/main/networks/tt-embedded_analysis.ipynb)). We have information on ~3200 (more painters with Art500k data only) painters from the 13th century to the 20th, where they were born, where and when they painted, how many artworks they painted per style, what movement they belonged to, a list of some of the painters who influenced them, who they influenced, the school they studied at and friends and coworkers (not all information is available for all painters, but most information is available for most painters). In this particular work, I wanted to gain more information about the structural properties and statistics of art style, movement, and painter networks. <br>
+**Description:** The work in this repository contains observing the properties and structures of painter, style and movement networks. The project includes gathering, preprocessing the data, possibly the hardest task (and not perfected, further work is to exclude less painters while combining datasets), creating various types of networks from certain attributes of the data (both static and dynamic), and analyzing the networks. Some of the analysis is dynamical analysis, and a dynamic model building framework was also created to construct some models for the dynamic analysis (see [here](https://github.com/me9hanics/ArtProjects/blob/main/networks/tt-embedded_analysis.ipynb)). We have information on ~3200 (more painters with Art500k data only) painters from the 13th century to the 20th, where they were born, where and when they painted, how many artworks they painted per style, what movement they belonged to, a list of some of the painters who influenced them, who they influenced, the school they studied at and friends and coworkers (not all information is available for all painters, but most information is available for most painters). In this particular work, I wanted to gain more information about the structural properties and statistics of art style, movement, and painter networks. <br>
 For this, I created three types of networks to analyze: style, movement, and painter networks.
 
 <details><summary><u>Further details</u></summary>
 The results we wished to get from this analysis are that we understand more about the structure of these networks, what type of common properties they have, and how the Time-and-Place network develops over time. A longer term goal would be to know enough of the "driving factors" of this network to be able to create a model that can generate networks with similar properties, and of course, to extend it to more authors, and creating more "sure" connections.
 
-<u> **Important:**</u> We have not included the data preprocessing here, just the creation of networks, as this file is only meant to contain analysis. Getting and preparing data was also a complex and lengthy task, as there was no extensive painter dataset available we had to create our own data from paintings datasets, such as WikiArt, Art500k, and some Wikipedia fetching+manual corrections. The data gathering and preprocessing can be found on GitHub under [me9hanics/PainterPalette](https://github.com/me9hanics/PainterPalette). All analysis including this and others can be found on GitHub under [me9hanics/ArtProject](https://github.com/me9hanics/ArtProject/), this includes analysis that was done with GePhi too (and some basic with Excel).
+<u> **Important:**</u> We have not included the data preprocessing here, just the creation of networks, as this file is only meant to contain analysis. Getting and preparing data was also a complex and lengthy task, as there was no extensive painter dataset available we had to create our own data from paintings datasets, such as WikiArt, Art500k, and some Wikipedia fetching+manual corrections. The data gathering and preprocessing can be found on GitHub under [me9hanics/PainterPalette](https://github.com/me9hanics/PainterPalette). All analysis including this and others can be found on GitHub under [me9hanics/ArtProjects](https://github.com/me9hanics/ArtProjects/), this includes analysis that was done with GePhi too (and some basic with Excel).
 
 <u> **Update:**</u> The dataset combination method is now more complete, with more artists, therefore the analysis will be re-run and updated here.
 
